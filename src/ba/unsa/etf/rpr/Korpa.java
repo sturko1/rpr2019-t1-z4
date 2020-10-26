@@ -23,7 +23,7 @@ public class Korpa {
         for (int i = 0; i < brojartikala; i++) {
             if (artikli[i].getKod().equals(kod)) {
                 pomocni = artikli[i];
-                for (int j = i; j < brojartikala; j++) artikli[j] = artikli[j+1];
+                if (brojartikala - i >= 0) System.arraycopy(artikli, i + 1, artikli, i, brojartikala - i);
                 brojartikala--;
                 break;
             }
