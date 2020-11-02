@@ -9,6 +9,10 @@ public class Korpa {
         return artikli;
     }
 
+    public int getBrojartikala() {
+        return brojartikala;
+    }
+
     public boolean dodajArtikl (Artikl a) {
         if (brojartikala == 50) return false;
         else {

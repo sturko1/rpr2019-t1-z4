@@ -10,6 +10,10 @@ public class Supermarket {
         return artikli;
     }
 
+    public int getBrojartikala() {
+        return brojartikala;
+    }
+
     public Artikl izbaciArtiklSaKodom(String kod) {
         Artikl pomocni = null;
 
